@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Docker 的常用笔记</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.e4d8b86b.css" as="style"><link rel="preload" href="/assets/js/app.42249773.js" as="script"><link rel="preload" href="/assets/js/2.5ac9d128.js" as="script"><link rel="preload" href="/assets/js/8.eee9a150.js" as="script"><link rel="prefetch" href="/assets/js/10.98f9c0b3.js"><link rel="prefetch" href="/assets/js/11.72cf4e0b.js"><link rel="prefetch" href="/assets/js/12.552f5f6a.js"><link rel="prefetch" href="/assets/js/13.296a27b8.js"><link rel="prefetch" href="/assets/js/14.7ad2de50.js"><link rel="prefetch" href="/assets/js/15.771e4057.js"><link rel="prefetch" href="/assets/js/16.2fafea87.js"><link rel="prefetch" href="/assets/js/17.91718073.js"><link rel="prefetch" href="/assets/js/18.38de9701.js"><link rel="prefetch" href="/assets/js/19.7ec1cdf0.js"><link rel="prefetch" href="/assets/js/20.888bd6df.js"><link rel="prefetch" href="/assets/js/21.b9be7094.js"><link rel="prefetch" href="/assets/js/22.45073e4b.js"><link rel="prefetch" href="/assets/js/23.b613eb70.js"><link rel="prefetch" href="/assets/js/24.7466ff39.js"><link rel="prefetch" href="/assets/js/25.c4b94f3f.js"><link rel="prefetch" href="/assets/js/26.e78c7cfa.js"><link rel="prefetch" href="/assets/js/27.39fd89b8.js"><link rel="prefetch" href="/assets/js/28.4e631904.js"><link rel="prefetch" href="/assets/js/29.c5f66a82.js"><link rel="prefetch" href="/assets/js/3.777c0e3c.js"><link rel="prefetch" href="/assets/js/30.30bdd759.js"><link rel="prefetch" href="/assets/js/31.dcfdb01a.js"><link rel="prefetch" href="/assets/js/32.60a4c152.js"><link rel="prefetch" href="/assets/js/33.f54dda6a.js"><link rel="prefetch" href="/assets/js/34.cf659902.js"><link rel="prefetch" href="/assets/js/4.b7d0708f.js"><link rel="prefetch" href="/assets/js/5.9e2f4ca7.js"><link rel="prefetch" href="/assets/js/6.c7b54f12.js"><link rel="prefetch" href="/assets/js/7.a6d921f4.js"><link rel="prefetch" href="/assets/js/9.35ba546c.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.e4d8b86b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/guide/leetcode/" class="nav-link">
+  笔记
+</a></div><div class="nav-item"><a href="https://github.com/31702160323" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/guide/leetcode/" class="nav-link">
+  笔记
+</a></div><div class="nav-item"><a href="https://github.com/31702160323" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  GitHub
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><a href="/guide/小程序/" class="sidebar-heading clickable open"><span>小程序专栏</span> <span class="arrow down"></span></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/小程序/wxs.html" class="sidebar-link">wxs</a></li></ul></section></li><li><a href="/guide/docker/" aria-current="page" class="active sidebar-link">Docker专栏</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/docker/#docker-的常用笔记" class="sidebar-link">Docker 的常用笔记</a></li></ul></li><li><section class="sidebar-group collapsable depth-0"><a href="/guide/html/" class="sidebar-heading clickable"><span>Html专栏</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/guide/javascript/" class="sidebar-heading clickable"><span>JavaScript专栏</span> <span class="arrow right"></span></a> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><a href="/guide/leetcode/" class="sidebar-heading clickable"><span>LeetCode专栏</span> <span class="arrow right"></span></a> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="docker-的常用笔记"><a href="#docker-的常用笔记" class="header-anchor">#</a> Docker 的常用笔记</h2> <h4 id="帮助命令"><a href="#帮助命令" class="header-anchor">#</a> 帮助命令</h4> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">docker</span>  version		<span class="token comment"># 显示`docker`的版本号</span>
+
+<span class="token function">docker</span> info			<span class="token comment"># 显示`docker`的系统信息</span>
+
+<span class="token function">docker</span> --help		<span class="token comment"># 帮助命令</span>
+</code></pre></div><h4 id="镜像命令"><a href="#镜像命令" class="header-anchor">#</a> 镜像命令</h4> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">docker</span> images <span class="token comment"># 查看所有本地的主机上的镜像</span>
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+hello-world         latest              bf756fb1ae65        <span class="token number">11</span> months ago       <span class="token number">13</span>.3kB
+
+<span class="token comment"># 解释</span>
+REPOSITORY	<span class="token comment"># 镜像的仓库源</span>
+TAG			<span class="token comment"># 镜像的标签</span>
+IMAGE ID	<span class="token comment"># 镜像的id</span>
+CREATED		<span class="token comment"># 镜像的创建时间</span>
+SIZE		<span class="token comment"># 镜像的大小</span>
+
+<span class="token comment"># 可选项</span>
+-a --a 		<span class="token comment"># 列出所有的镜像</span>
+-q --quiet	<span class="token comment"># 只显示镜像的id</span>
+</code></pre></div><h5 id="镜像搜索命令"><a href="#镜像搜索命令" class="header-anchor">#</a> 镜像搜索命令</h5> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">docker</span> search XXX
+
+<span class="token function">docker</span> search XXX --filter<span class="token operator">=</span>STARS<span class="token operator">=</span><span class="token number">3000</span> <span class="token comment"># 搜索STARS大于3000的</span>
+</code></pre></div><h5 id="镜像下载"><a href="#镜像下载" class="header-anchor">#</a> 镜像下载</h5> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># docker pull 镜像名:版本号</span>
+</code></pre></div><h5 id="删除镜像"><a href="#删除镜像" class="header-anchor">#</a> 删除镜像</h5> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">docker</span> rmi -f 镜像id或名字
+</code></pre></div><h5 id="创建镜像"><a href="#创建镜像" class="header-anchor">#</a> 创建镜像</h5> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">docker</span> build -t 镜像名:tag Dockerfile路径
+</code></pre></div><h4 id="容器命令"><a href="#容器命令" class="header-anchor">#</a> 容器命令</h4> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 新建容器并启动</span>
+<span class="token function">docker</span> run <span class="token punctuation">[</span>可选参数<span class="token punctuation">]</span> <span class="token punctuation">[</span>镜像名<span class="token punctuation">]</span>
+
+<span class="token comment">##可选参数</span>
+--name<span class="token operator">=</span><span class="token string">&quot;Name&quot;</span>	<span class="token comment"># 容器的名字</span>
+-d				<span class="token comment"># 后台运行</span>
+-it				<span class="token comment"># 使用交互方式运行，进入容器查看内容</span>
+-p				<span class="token comment"># 容器随机端口</span>
+-p				<span class="token comment"># 指定容器的端口 -p 8080:8080</span>
+-v				<span class="token comment"># 映射文件路径 宿主路径:容器路径  不支持相对路径</span>
+	-p id:主机端口:容器端口
+	-p 主机端口:容器端口  <span class="token comment"># 常用</span>
+	-p 容器端口
+	容器端口
+</code></pre></div><h5 id="列出所有运行的容器"><a href="#列出所有运行的容器" class="header-anchor">#</a> 列出所有运行的容器</h5> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">docker</span> <span class="token function">ps</span> <span class="token punctuation">[</span>可选参数<span class="token punctuation">]</span>
+			<span class="token comment"># 列出当前运行的容器</span>
+	-a		<span class="token comment"># 列出当前运行的容器 + 带出历史运行的容器</span>
+	-n<span class="token operator">=</span>?	<span class="token comment"># 显示最近创建的容器</span>
+	-q		<span class="token comment"># 只显示容的编号</span>
+</code></pre></div><h5 id="退出容器"><a href="#退出容器" class="header-anchor">#</a> 退出容器</h5> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token builtin class-name">exit</span>			<span class="token comment"># 从容器退回主机</span>
+Ctr + P + Q		<span class="token comment"># 容器不停止退出</span>
+</code></pre></div><h5 id="删除容器"><a href="#删除容器" class="header-anchor">#</a> 删除容器</h5> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">docker</span> <span class="token function">rm</span> 容器 <span class="token function">id</span>						<span class="token comment"># 删除指定的容器</span>
+<span class="token function">docker</span> <span class="token function">rm</span> -f <span class="token variable"><span class="token variable">$(</span><span class="token function">docker</span> <span class="token function">ps</span> -aq<span class="token variable">)</span></span>		 <span class="token comment"># 删除所有的容器</span>
+</code></pre></div><h5 id="启动和停止容器的操作"><a href="#启动和停止容器的操作" class="header-anchor">#</a> 启动和停止容器的操作</h5> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">docker</span> start 容器id			<span class="token comment"># 启动容器</span>
+<span class="token function">docker</span> restart 容器id			<span class="token comment"># 重庆容器</span>
+<span class="token function">docker</span> stop 容器id			<span class="token comment"># 停止容器</span>
+<span class="token function">docker</span> <span class="token function">kill</span> 容器id			<span class="token comment"># 强制停止容器</span>
+</code></pre></div><h4 id="常用其他命令"><a href="#常用其他命令" class="header-anchor">#</a> 常用其他命令</h4> <h5 id="后台启动容器"><a href="#后台启动容器" class="header-anchor">#</a> 后台启动容器</h5> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 问题 “docker run -d 镜像名” 运行容器后， “docker ps” 查看容器，发现容器停止了</span>
+
+<span class="token comment"># 常见的坑，docker 容器使用后台运行，就必须要有一个前台进程，docker 发现没有应用了，就会自动停止</span>
+<span class="token comment"># nginx,容器启动后， 发现自己没有提供服务，就会立即停止，就是因为没有程序了</span>
+</code></pre></div><h5 id="日志命令"><a href="#日志命令" class="header-anchor">#</a> 日志命令</h5> <div class="language- extra-class"><pre class="language-text"><code>docker logs -f -t --tail 条数 容器id
+</code></pre></div><h5 id="查看容器进程信息"><a href="#查看容器进程信息" class="header-anchor">#</a> 查看容器进程信息</h5> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">docker</span> <span class="token function">top</span> 容器
+</code></pre></div><h5 id="查看镜像的元信息"><a href="#查看镜像的元信息" class="header-anchor">#</a> 查看镜像的元信息</h5> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">docker</span> inspect 容器id
+</code></pre></div><h5 id="进入当前运行容器"><a href="#进入当前运行容器" class="header-anchor">#</a> 进入当前运行容器</h5> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 我们通常容器都是使用后台运行的，使用进入容器，修改一些配置</span>
+
+<span class="token comment">## 方式1</span>
+<span class="token function">docker</span> <span class="token builtin class-name">exec</span> -it 容器id bashShell  <span class="token comment">## /bin/bash</span>
+
+<span class="token comment">## 方式2</span>
+<span class="token function">docker</span> attach 容器id
+
+<span class="token comment">## 区别</span>
+<span class="token comment">### docker exect 进入容器后开启一个新的终端，可以在里面操作 （常用）</span>
+<span class="token comment">### docker attach 进入容器正在执行的终端，不开启新的终端</span>
+</code></pre></div><h5 id="从容器拷贝文件到主机"><a href="#从容器拷贝文件到主机" class="header-anchor">#</a> 从容器拷贝文件到主机</h5> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token function">docker</span> <span class="token function">cp</span> 容器id:容器内路径 目的的主机路径
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/guide/小程序/wxs.html" class="prev">
+        wxs
+      </a></span> <span class="next"><a href="/guide/html/盒子模型.html">
+        盒子模型
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.42249773.js" defer></script><script src="/assets/js/2.5ac9d128.js" defer></script><script src="/assets/js/8.eee9a150.js" defer></script>
+  </body>
+</html>
